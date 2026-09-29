@@ -39,7 +39,7 @@ A quick, scannable look at what the app does.
 - Time, label, and flexible schedules: Once, Daily, Weekly by weekday, Monthly by day-of-month, or Custom specific dates.
 - 8 gentle built-in tones (for example, "Dawn" rises slowly) with preview.
 - Full-screen ringing alert with Stop and Snooze; volume follows the device ringer.
-- Enable/disable each alarm; swipe to delete.
+- Enable or disable each alarm; delete one from its editor.
 
 ### Reminders
 - Three ways to schedule: **Once**, **Repeats** (calendar rules), or a **Sequence** of specific dates.

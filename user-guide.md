@@ -115,13 +115,15 @@ Set as many alarms as you like, each with its own schedule and tone.
 **Managing alarms**
 
 - **Enable or disable** each alarm without deleting it.
-- **Swipe to delete** an alarm you no longer need.
+- **Delete** an alarm from the bottom of its editor — tap the alarm to open it.
 
 **Remember:** Alarms fire through notifications, so notifications must be allowed for the app.
 
 ---
 
 ## Reminders
+
+> **Beta.** This section is still settling, and its screens are labelled *(beta)* in the app. It works, but it's where things are most likely to change.
 
 Reminders are flexible nudges and tasks. They're more powerful than alarms and are built for things like appointments, chores, exercises, and follow-ups.
 
@@ -138,15 +140,22 @@ Every reminder gets its dates from one of three sources:
   - with an optional **end date** or a **count** (stop after N occurrences).
 - **Sequence** — a hand-entered list of specific dates, for when the schedule doesn't follow a neat rule.
 
-### Plain nudges vs. accountable tasks
+### Type — how strict the reminder is
 
-Each reminder is one of two kinds:
+Every reminder has a **Type**, set in its editor. It decides what happens when you
+don't get to it:
 
-- **Plain nudge** — a simple reminder that fires and is done.
-- **Accountable task** — a reminder you're meant to complete, with:
-  - a **deadline**,
-  - an **expiry** (after which it counts as missed),
-  - optional **evidence** you can attach when you complete it.
+- **Nudge** — notifies once and never nags. No deadline, so it's never overdue and
+  never counts as missed. Good for *"water the plants."*
+- **Soft task** — has a deadline, and if you miss it the reminder **stays on your
+  list, overdue**, until you do it. Reminds you again up to three times, an hour
+  apart. Good for *"pay the water bill."*
+- **Scheduled task** — has a **firm deadline**: miss it and the occurrence closes as
+  missed rather than following you around. Reminds you twice, half an hour apart, and
+  you must **type a note** before you can mark it done. Good for *"record blood
+  pressure."*
+
+All three can repeat, happen once, or run as a sequence of dates.
 
 ### Categories
 
@@ -163,6 +172,8 @@ Choose from **12 presets** or a **custom** color.
 ### Sound
 
 - **8 built-in tones**, or **import your own audio** (it's trimmed to 30 seconds).
+- **None** — no sound at all. Set it on a category and everything inside it is silent
+  unless a reminder says otherwise.
 - **"Ring until stopped"** — a full-screen escalation for critical reminders that keeps alerting until you deal with it.
 
 ### Views and tracking
@@ -176,6 +187,8 @@ Choose from **12 presets** or a **custom** color.
 ---
 
 ## Medications
+
+> **Beta.** This section is still settling, and its screens are labelled *(beta)* in the app. It works, but it's where things are most likely to change.
 
 Medications work like reminders but are tuned for taking doses on schedule.
 
@@ -191,6 +204,12 @@ When a dose is due you can:
 - **Mark taken** — records the **exact time** you took it.
 - **Skip** — record that you intentionally skipped it.
 - **Snooze** — remind me again shortly.
+- **Silence** — quiet the alert but leave the dose open, so you can come back and say
+  whether you took it.
+
+Once you've marked a dose taken or skipped, the actions are replaced by a line saying
+which one was recorded and when — and any alert for it is cleared from your lock
+screen and Notification Centre.
 
 **The dose bubble**
 
@@ -211,12 +230,14 @@ When a dose is due you can:
 
 ## Journal
 
+> **Beta.** This section is still settling, and its screens are labelled *(beta)* in the app. It works, but it's where things are most likely to change.
+
 A simple place for quick bedside notes.
 
 - **Grouped by night**, newest first — so each night's thoughts stay together.
 - **Capture from Night Mode** without a Face ID prompt, so you can quickly note something without fully leaving the dark clock.
 - **Full-text search** that shows the **matching line**, so you can find that note fast.
-- **Edit or delete** any entry.
+- **Edit or delete** any entry — open a note, then use **Edit** or the bin.
 
 ---
 
