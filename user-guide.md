@@ -143,16 +143,16 @@ Every reminder gets its dates from one of three sources:
 ### Type — how strict the reminder is
 
 Every reminder has a **Type**, set in its editor. It decides what happens when you
-don't get to it:
+don't get to it. The editor shows what the chosen type does, under the picker:
 
-- **Nudge** — notifies once and never nags. No deadline, so it's never overdue and
+- **Notify once** — notifies once and never nags. No deadline, so it's never overdue and
   never counts as missed. Good for *"water the plants."*
-- **Soft task** — has a deadline, and if you miss it the reminder **stays on your
+- **Keep until done** — has a deadline, and if you miss it the reminder **stays on your
   list, overdue**, until you do it. Reminds you again up to three times, an hour
   apart. Good for *"pay the water bill."*
-- **Scheduled task** — has a **firm deadline**: miss it and the occurrence closes as
+- **Log by deadline** — has a **firm deadline**: miss it and the occurrence closes as
   missed rather than following you around. Reminds you twice, half an hour apart, and
-  you must **type a note** before you can mark it done. Good for *"record blood
+  you must **attach a note** before you can mark it done. Good for *"record blood
   pressure."*
 
 All three can repeat, happen once, or run as a sequence of dates.
