@@ -47,7 +47,7 @@ Night Mode is the full-screen bedside clock, designed for a dark room.
 - **A clean face.** The status bar and home indicator are hidden, so there's nothing but the time.
 - **Reveal controls with a touch.** Tap or long-press the screen to bring up the controls. They **auto-hide after about 6 seconds** so the screen returns to a clean state.
 - **Any orientation.** The clock works in portrait or landscape and **re-centers when you rotate** the phone — handy when it's lying on a nightstand.
-- **Quick journal capture.** You can jot a note straight from the dark clock without leaving Night Mode and without a Face ID prompt (see [Journal](#journal)).
+- **Quick journal capture.** You can jot a note straight from the dark clock without leaving Night Mode (see [Journal](#journal)).
 
 **Tip:** Prop the phone on a stand or lay it flat where you can see it from bed. Because the display is dim and drifting, it's comfortable to leave on all night.
 
@@ -138,7 +138,7 @@ Every reminder gets its dates from one of three sources:
   - a specific day of the month,
   - once yearly,
   - with an optional **end date** or a **count** (stop after N occurrences).
-- **Sequence** — a hand-entered list of specific dates, for when the schedule doesn't follow a neat rule.
+- **Chosen dates** — a hand-entered list of specific dates, for when the schedule doesn't follow a neat rule.
 
 ### Type — how strict the reminder is
 
@@ -155,7 +155,7 @@ don't get to it. The editor shows what the chosen type does, under the picker:
   you must **attach a note** before you can mark it done. Good for *"record blood
   pressure."*
 
-All three can repeat, happen once, or run as a sequence of dates.
+All three can repeat, happen once, or run on chosen dates.
 
 ### Categories
 
@@ -194,20 +194,24 @@ Medications work like reminders but are tuned for taking doses on schedule.
 
 **Scheduling doses**
 
-- **Frequency shortcuts** — once, twice, or three times daily, with sensible preset times (morning, noon, dinner), or set a **custom** schedule.
-- **Dose window** — instead of a single exact instant, a dose has an **on-time window**, so a dose taken a little early or late still counts as on time.
+- **Frequency shortcuts** — once, twice, or three times a day, with sensible preset times (morning, noon, dinner), or set a **custom** schedule.
+- **Timing rules** — each medication has one, and the editor describes it under the picker:
+  - **Regular (30-min window)** — on time within 30 minutes of the set time, still OK (recorded as late) for up to 4 hours, then missed.
+  - **Strict timing (15-min window)** — on time within 15 minutes, still OK for up to 2 hours, then missed.
+  - **Only when needed** — no times and no reminders. Use **Log a dose** on the medication's screen each time you take it.
+- **Require a reading** — a separate switch. When on, a reading (blood pressure, glucose…) must be attached before a dose can be marked taken.
 
 **Handling a dose**
 
-When a dose is due you can:
+Open a dose and choose one under **Record this dose**:
 
-- **Mark taken** — records the **exact time** you took it.
-- **Skip** — record that you intentionally skipped it.
+- **Dose taken** — records the **exact time** you took it.
+- **Dose not taken** — record that you chose not to take it (kept separate from an automatic *missed*).
 - **Snooze** — remind me again shortly.
 - **Silence** — quiet the alert but leave the dose open, so you can come back and say
   whether you took it.
 
-Once you've marked a dose taken or skipped, the actions are replaced by a line saying
+Once you've recorded a dose as taken or not taken, the choices are replaced by a line saying
 which one was recorded and when — and any alert for it is cleared from your lock
 screen and Notification Centre.
 
@@ -235,7 +239,8 @@ screen and Notification Centre.
 A simple place for quick bedside notes.
 
 - **Grouped by night**, newest first — so each night's thoughts stay together.
-- **Capture from Night Mode** without a Face ID prompt, so you can quickly note something without fully leaving the dark clock.
+- **Capture from Night Mode**, so you can quickly note something without fully leaving the dark clock.
+- **Tags** — a note can have any number of tags, or none. Tick them or create new ones with **Add tags…** on a note; the tag button at the top of the Journal shows one tag's notes, and **Manage tags** renames or deletes a tag everywhere.
 - **Full-text search** that shows the **matching line**, so you can find that note fast.
 - **Edit or delete** any entry — open a note, then use **Edit** or the bin.
 
@@ -244,6 +249,8 @@ A simple place for quick bedside notes.
 ## Notifications &amp; Privacy
 
 **Notifications are the only alert channel.** Alarms, reminders, and medication doses all fire through iOS notifications. You must **allow notifications** for the app or nothing will alert you. If you're not getting alerts, check the iOS **Settings** app under Nightstand Alarm and Reminders and make sure notifications are on.
+
+**Acting on a notification.** Tap a reminder or dose notification to open it in the app. Press and hold it for quick actions: **Done**, **Snooze** or **Silence** for a reminder, and **Taken**, **Not taken**, **Snooze** or **Silence** for a dose. A reminder or dose that needs a note or reading has no Done there — open it and add that first. An alarm rings full screen with its own Stop and Snooze.
 
 **Privacy is built in:**
 
