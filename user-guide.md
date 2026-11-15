@@ -211,6 +211,8 @@ Open a dose and choose one under **Record this dose**:
 - **Silence** — quiet the alert but leave the dose open, so you can come back and say
   whether you took it.
 
+Each medication gets **one line** in each list — its latest due dose, its next dose, and its last recorded dose — with a "more" line underneath when there are others. A dose not taken by the time the **next dose is due** is recorded as missed then, and stops alerting; its notifications stack with the medication's others and are cleared when a newer one arrives.
+
 Once you've recorded a dose as taken or not taken, the choices are replaced by a line saying
 which one was recorded and when — and any alert for it is cleared from your lock
 screen and Notification Centre.
