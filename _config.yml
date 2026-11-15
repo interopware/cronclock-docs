@@ -1,11 +1,11 @@
 title: CronClock: Alarms & Reminders
 description: >-
   A bedside display designed for nighttime use — power-efficient,
-  sleep-friendly, and always readable. A free, fully offline iPhone app
+  sleep-friendly, and always readable. A free, fully offline iPhone and iPad app
   for peaceful, power-friendly nights.
 
 url: "https://interopware.github.io"
-baseurl: "/nightstand-alarm-reminders-docs"
+baseurl: "/cronclock-docs"
 
 theme: jekyll-theme-cayman
 
