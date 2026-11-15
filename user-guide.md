@@ -157,7 +157,8 @@ don't get to it. The editor shows what the chosen type does, under the picker:
   calendar, and you can mark it done. Good for things you want on your list but not on
   your lock screen.
 - **Notify once** — notifies once and never nags. No deadline, so it's never overdue and
-  never counts as missed. Good for *"water the plants."*
+  never counts as missed: if you don't mark it done, it shows as **Not done**, and it
+  leaves **Due now** once the next time comes due. Good for *"water the plants."*
 - **Keep until done** — has a deadline, and if you miss it the reminder **stays on your
   list, overdue**, until you do it. Reminds you again up to three times, an hour
   apart. Good for *"pay the water bill."*
@@ -192,7 +193,7 @@ The Reminders screen has three segments: **Upcoming**, **Reminders**, and **Cale
 
 - **Upcoming** — one line per reminder, under **Due now**, **Upcoming**, and **Recent history**, with a "more" line when it has other occurrences. Open one to **Mark done**, **Snooze**, or **Silence** it. Settings › Upcoming Preview sets **Items shown (max)** (default 15) and **Look ahead (days)** (default 2).
 - **Calendar** — a month view. Dates more than 2 weeks ahead show as **Planned**.
-- **Status words** — Due now, Late, still OK, Overdue, Taken on time, Taken late, Not taken, Missed, Silenced.
+- **Status words** — Due now, Late, still OK, Overdue, Not done, Taken on time, Taken late, Not taken, Missed, Silenced.
 - **History log** — a timestamped record of every event: notified, done, snoozed, silenced, and missed.
 - **Adherence reports** — see how consistently you're keeping up, both **per reminder** and **per category**.
 - **Search** — find reminders by **name**, **notes**, or **category**.
