@@ -44,8 +44,8 @@ A quick, scannable look at what the app does.
 
 ### Reminders
 - Three ways to schedule: **Once**, **Repeats** (calendar rules), or **Chosen dates**.
-- Three types: **Notify once** (one notification), **Keep until done** (reminds again until you mark it done), and **Log by deadline** (needs a note attached before the deadline).
-- Group related reminders into **Categories** (like "Knee recovery"), with a month calendar, Upcoming lists of what is due now, what is next, and recent history, and adherence reports.
+- Four types: **Don't notify** (on your list, no notification), **Notify once** (one notification), **Keep until done** (reminds again until you mark it done), and **Log by deadline** (needs a note attached before the deadline).
+- Group related reminders into **Categories** (like "Household"), with a month calendar, Upcoming lists of what is due now, what is next, and recent history, and adherence reports.
 - Color coding, 7 built-in tones plus custom audio, and "Ring until stopped" for items that must not be missed.
 
 ### Medications

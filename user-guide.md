@@ -131,7 +131,7 @@ Tones: **7 built-in tones** (Chime, Bell, Gentle Harp, Music Box, Marimba, Ocean
 
 ## Reminders
 
-> **Beta.** This section is still settling, and its screens are labelled *(beta)* in the app. It works, but it's where things are most likely to change.
+> **Beta.** This section is still settling, and its screens are labeled *(beta)* in the app. It works, but it's where things are most likely to change.
 
 Reminders are for things like appointments, chores, exercises, and follow-ups. Unlike an alarm, a reminder does not ring full screen (unless you turn on "Ring until stopped"); it posts a notification you can act on.
 
@@ -153,6 +153,9 @@ Every reminder gets its dates in one of three ways:
 Every reminder has a **Type**, set in its editor. It decides what happens when you
 don't get to it. The editor shows what the chosen type does, under the picker:
 
+- **Don't notify** — never sends a notification. It still shows in Upcoming and on the
+  calendar, and you can mark it done. Good for things you want on your list but not on
+  your lock screen.
 - **Notify once** — notifies once and never nags. No deadline, so it's never overdue and
   never counts as missed. Good for *"water the plants."*
 - **Keep until done** — has a deadline, and if you miss it the reminder **stays on your
@@ -163,11 +166,11 @@ don't get to it. The editor shows what the chosen type does, under the picker:
   you must **attach a note** before you can mark it done. Good for *"record blood
   pressure."*
 
-All three can repeat, happen once, or run on chosen dates.
+All four can repeat, happen once, or run on chosen dates.
 
 ### Categories
 
-Group related reminders into a **Category** — for example, a "Knee recovery" category that gathers all the exercises and check-ins for that goal. Categories give you a shared color default and a place to see everything for one goal together.
+Group related reminders into a **Category** — for example, a "Household" category that gathers trash night, the plants and the weekly cleanup. Categories give you a shared color default and a place to see everything for one goal together.
 
 ### Color coding
 
@@ -198,7 +201,7 @@ The Reminders screen has three segments: **Upcoming**, **Reminders**, and **Cale
 
 ## Medications
 
-> **Beta.** This section is still settling, and its screens are labelled *(beta)* in the app. It works, but it's where things are most likely to change.
+> **Beta.** This section is still settling, and its screens are labeled *(beta)* in the app. It works, but it's where things are most likely to change.
 
 Medications work like reminders but are tuned for taking doses on schedule.
 
@@ -227,7 +230,7 @@ A medication's notifications stack together. Older ones are cleared when you ope
 
 Once you've recorded a dose as taken or not taken, the choices are replaced by a line saying
 which one was recorded and when — and any alert for it is cleared from your lock
-screen and Notification Centre.
+screen and Notification Center.
 
 **The dose bubble**
 
@@ -248,7 +251,7 @@ screen and Notification Centre.
 
 ## Journal
 
-> **Beta.** This section is still settling, and its screens are labelled *(beta)* in the app. It works, but it's where things are most likely to change.
+> **Beta.** This section is still settling, and its screens are labeled *(beta)* in the app. It works, but it's where things are most likely to change.
 
 A simple place for quick bedside notes.
 
@@ -256,7 +259,7 @@ A simple place for quick bedside notes.
 - **Capture from Night Mode**, so you can quickly note something without fully leaving the dark clock.
 - **Tags** — a note can have any number of tags, or none. Tick them or create new ones with **Add tags…** on a note; the tag button at the top of the Journal shows one tag's notes, and **Manage tags** renames or deletes a tag everywhere.
 - **Full-text search** that shows the **matching line**, so you can find that note fast.
-- **Edit or delete** any entry — open a note, then use **Edit** or the bin.
+- **Edit or delete** any entry — open a note, then use **Edit** or the trash button.
 
 ---
 
