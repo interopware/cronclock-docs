@@ -28,7 +28,7 @@ This is the complete guide. If you just want the highlights, see the [home page 
 
 ## Getting Started
 
-CronClock: Alarms & Reminders is a free app for iPhone and iPad that combines a calm bedside clock with alarms, reminders, medications, and a night journal. Everything runs on your device — there's no account to create and no network connection.
+CronClock: Alarms & Reminders is a free app for iPhone and iPad that combines a calm bedside clock with alarms, reminders, medications, and a night journal. Everything runs on your device — there's no account to create and no server.
 
 A few things to do first:
 
@@ -45,7 +45,8 @@ Night Mode is the full-screen bedside clock, designed for a dark room.
 - **Large, dim text on black.** The clock shows big, low-glare digits on a black background so it's readable at a glance but never harsh.
 - **It slowly drifts.** The time gently moves around the screen over time. This prevents OLED burn-in (see [Burn-in Prevention](#burn-in-prevention)).
 - **A clean face.** The status bar and home indicator are hidden, so there's nothing but the time.
-- **Reveal controls with a touch.** Tap or long-press the screen to bring up the controls. They **auto-hide after about 6 seconds** so the screen returns to a clean state.
+- **Start it from Home.** Tap **Start Night Mode** on the Home screen.
+- **Reveal controls with a touch.** Tap or long-press the screen to bring up the controls. The first time, a one-time hint says "Tap anywhere for controls". The controls are **Help**, **Note** and **Settings** at the top right, the AM/PM and year at the top left, and **Exit Night Mode** and **Hide Controls** at the bottom. They **auto-hide after about 6 seconds** so the screen returns to a clean state.
 - **Any orientation.** The clock works in portrait or landscape and **re-centers when you rotate** the phone — handy when it's lying on a nightstand.
 - **Quick journal capture.** You can jot a note straight from the dark clock without leaving Night Mode (see [Journal](#journal)).
 
@@ -81,10 +82,11 @@ You can tune almost everything about how the clock looks. Changes show in a **li
 **Motion**
 
 - **Drift speed** and **pause-between-moves** — control how quickly the clock drifts and how long it rests between moves.
+- **Use Lowest-Power Motion** — one tap sets the drift speed to 60 pt/s and the wait to 120 seconds, the motion settings that use the least power. It changes only the motion; it does not change color or brightness.
 
-**Shortcuts**
+**Saving changes**
 
-- **Reset to lowest power** — one tap sets the display to the most battery-friendly combination (deep red text, low brightness, and so on). Great for overnight use.
+- **Done** keeps your changes; **Cancel** discards them.
 
 ---
 
@@ -95,29 +97,35 @@ Set as many alarms as you like, each with its own schedule and tone.
 **Creating an alarm**
 
 - **Time** — pick when it should ring.
-- **Label** — name it (for example, "Wake up" or "Gym").
+- **Name** — for example, "Wake up" or "Gym".
+- **Quick Set** — on a new alarm, tap a duration (or choose hours and minutes) to set the time from now. On an existing alarm the same thing is **Set Time from Now…**. Either one changes the schedule to Once.
 - **Schedule** — choose how it repeats:
   - **Once** — a single alarm.
-  - **Daily** — every day.
-  - **Weekly** — on chosen weekdays.
-  - **Monthly** — on a chosen day-of-month.
-  - **Custom** — specific dates you pick.
+  - **Every day**.
+  - **Weekly** — on the weekdays you tap (**Su Mo Tu We Th Fr Sa**).
+  - **Monthly** — on a chosen day of the month.
+  - **Annually** — once a year.
+  - **Custom dates** — specific dates you pick.
 
-**Tones**
+**Delivery and tones**
 
-- Choose from **8 gentle built-in tones**. Some rise slowly — for example, **"Dawn"** eases in rather than jolting you awake. You can **preview** each tone before choosing.
+An alarm has two switches. You can turn on one or both, and each has its own tone:
+
+- **Ring as a full-screen alarm** — rings until you stop it, **even in silent mode**.
+- **Send a notification** — a banner and sound that **follow silent mode**.
+
+Tones: **7 built-in tones** (Chime, Bell, Gentle Harp, Music Box, Marimba, Ocean Waves, Dawn), **Default** (the iOS sound), or **None**. **"Dawn"** rises slowly out of silence rather than jolting you awake. You can **preview** each tone, or use **Import a Sound…** to add your own (trimmed to 30 seconds). The app has no volume setting; the full-screen alarm and notification sounds are played by iOS.
 
 **When an alarm rings**
 
-- A **full-screen ringing alert** appears with **Stop** and **Snooze**.
-- **Volume follows the device ringer**, so set your ringer volume to a level that will wake you.
+- The full-screen alarm shows **Stop** and **Snooze**.
 
 **Managing alarms**
 
 - **Enable or disable** each alarm without deleting it.
-- **Delete** an alarm from the bottom of its editor — tap the alarm to open it.
+- **Delete** an alarm from its editor: tap the alarm, then **Delete Alarm**. It asks before deleting. There is no swipe to delete.
 
-**Remember:** Alarms fire through notifications, so notifications must be allowed for the app.
+**Remember:** Notifications must be allowed for the app, and the full-screen alarm needs the app to be allowed to use alarms (iOS Settings › CronClock).
 
 ---
 
@@ -125,11 +133,11 @@ Set as many alarms as you like, each with its own schedule and tone.
 
 > **Beta.** This section is still settling, and its screens are labelled *(beta)* in the app. It works, but it's where things are most likely to change.
 
-Reminders are flexible nudges and tasks. They're more powerful than alarms and are built for things like appointments, chores, exercises, and follow-ups.
+Reminders are for things like appointments, chores, exercises, and follow-ups. Unlike an alarm, a reminder does not ring full screen (unless you turn on "Ring until stopped"); it posts a notification you can act on.
 
-### Occurrence sources
+### Ways to schedule
 
-Every reminder gets its dates from one of three sources:
+Every reminder gets its dates in one of three ways:
 
 - **Once** — a single event at a specific date and time.
 - **Repeats** — calendar rules, such as:
@@ -163,23 +171,25 @@ Group related reminders into a **Category** — for example, a "Knee recovery" c
 
 ### Color coding
 
-Colors cascade so the most specific setting wins:
-
-**occurrence color → overrides → reminder color → overrides → category default**
+Each occurrence is shown in the first color that is set, checked in this order: the occurrence's own color, then the reminder's, then the category's.
 
 Choose from **12 presets** or a **custom** color.
 
 ### Sound
 
-- **8 built-in tones**, or **import your own audio** (it's trimmed to 30 seconds).
+- **7 built-in tones**, **Default** (the iOS sound), or **import your own audio** (it's trimmed to 30 seconds and the notification itself plays it).
+- Like color, the sound used is the first one set: the occurrence's, then the reminder's, then the category's, then the app default.
 - **None** — no sound at all. Set it on a category and everything inside it is silent
   unless a reminder says otherwise.
-- **"Ring until stopped"** — a full-screen escalation for critical reminders that keeps alerting until you deal with it.
+- **"Ring until stopped"** — rings full screen, like an alarm, until you stop or snooze it. The app must be allowed to use alarms; without that permission it is delivered as a normal notification.
 
 ### Views and tracking
 
-- **Month calendar view** — see reminders laid out across the month.
-- **Due list** — what needs attention now, with **Mark Done**, **Snooze**, and **Silence** actions.
+The Reminders screen has three segments: **Upcoming**, **Reminders**, and **Calendar**.
+
+- **Upcoming** — one line per reminder, under **Due now**, **Upcoming**, and **Recent history**, with a "more" line when it has other occurrences. Open one to **Mark done**, **Snooze**, or **Silence** it. Settings › Upcoming Preview sets **Items shown (max)** (default 15) and **Look ahead (days)** (default 2).
+- **Calendar** — a month view. Dates more than 2 weeks ahead show as **Planned**.
+- **Status words** — Due now, Late, still OK, Overdue, Taken on time, Taken late, Not taken, Missed, Silenced.
 - **History log** — a timestamped record of every event: notified, done, snoozed, silenced, and missed.
 - **Adherence reports** — see how consistently you're keeping up, both **per reminder** and **per category**.
 - **Search** — find reminders by **name**, **notes**, or **category**.
@@ -207,11 +217,13 @@ Open a dose and choose one under **Record this dose**:
 
 - **Dose taken** — records the **exact time** you took it.
 - **Dose not taken** — record that you chose not to take it (kept separate from an automatic *missed*).
-- **Snooze** — remind me again shortly.
+- **Snooze** — remind me again after the snooze time (shown only once the dose is due). The reminders start again from the end of the snooze.
 - **Silence** — quiet the alert but leave the dose open, so you can come back and say
   whether you took it.
 
-Each medication gets **one line** in each list — its latest due dose, its next dose, and its last recorded dose — with a "more" line underneath when there are others. A dose not taken by the time the **next dose is due** is recorded as missed then, and stops alerting; its notifications stack with the medication's others and are cleared when a newer one arrives.
+Each medication gets **one line** in each list — its latest due dose, its next dose, and its last recorded dose — with a "more" line underneath when there are others. A dose that is not taken is recorded as **missed** at the end of its window or when the **next dose is due**, whichever comes first, and then stops alerting.
+
+A medication's notifications stack together. Older ones are cleared when you open the app, when you act on one, and by a background refresh that iOS runs when it chooses.
 
 Once you've recorded a dose as taken or not taken, the choices are replaced by a line saying
 which one was recorded and when — and any alert for it is cleared from your lock
@@ -223,14 +235,14 @@ screen and Notification Centre.
 
 **Tags and adherence**
 
-- Each medication gets a **4-letter, color-coded tag** for quick recognition.
-- An **adherence chart** shows how well you're keeping up over a window you choose.
+- Each medication can have a short **color-coded tag** (it defaults to the first letters of the name), shown on the bubble and in lists.
+- An **adherence report** shows the percent of doses taken and the counts behind it (taken, not taken, missed) over the last 7, 30 or 90 days, chosen at the top of the report. There is no chart.
 
 **Break-through alerts**
 
-- Medication reminders are **time-sensitive**, so they **break through Focus and Do Not Disturb** — a missed dose shouldn't be silently swallowed by a Focus mode.
+- Medication reminders are **Time Sensitive** notifications, so they can **break through a Focus** (including Do Not Disturb) when Time Sensitive notifications are allowed for the app.
 
-**Privacy note:** You can anonymize medication names on the lock screen — see [Notifications &amp; Privacy](#notifications--privacy).
+**Privacy note:** You can hide medication names on the Lock Screen — see [Notifications &amp; Privacy](#notifications--privacy).
 
 ---
 
@@ -252,13 +264,16 @@ A simple place for quick bedside notes.
 
 **Notifications are the only alert channel.** Alarms, reminders, and medication doses all fire through iOS notifications. You must **allow notifications** for the app or nothing will alert you. If you're not getting alerts, check the iOS **Settings** app under **CronClock** and make sure notifications are on.
 
-**Acting on a notification.** Tap a reminder or dose notification to open it in the app. Press and hold it for quick actions: **Done**, **Snooze** or **Silence** for a reminder, and **Taken**, **Not taken**, **Snooze** or **Silence** for a dose. A reminder or dose that needs a note or reading has no Done there — open it and add that first. An alarm rings full screen with its own Stop and Snooze.
+**Acting on a notification.** Tap a reminder or dose notification to open that occurrence in the app. Press and hold it for quick actions: **Done**, **Snooze** or **Silence** for a reminder, and **Taken**, **Not taken**, **Snooze** or **Silence** for a dose. A reminder that needs a note, or a dose that needs a reading, has no Done or Taken there — open it and add that first. Snooze starts the reminders again from the end of the snooze. An alarm rings full screen with its own Stop and Snooze.
+
+Notifications for one medication or reminder stack together. Older ones are cleared when you open the app, when you act on one, and by a background refresh that iOS runs when it chooses.
 
 **Privacy is built in:**
 
-- **Anonymize medication names on the lock screen** — turn this on and every medication alert simply reads **"Medication reminder,"** so nobody glancing at your phone sees what you take.
+- **Hide medication names on the Lock Screen** (Settings › Privacy) — turn this on and every medication alert simply reads **"Medication reminder,"** so nobody glancing at your phone sees what you take.
+- **Alarm titles are visible.** While an alarm rings, its title appears on the Lock Screen and in the Dynamic Island.
 - **No system integrations by design.** The app deliberately does **not** use Siri, Shortcuts, Spotlight, App Intents, or activity donations. Nothing about your reminders or medications is offered to other parts of the system.
-- **Everything is on-device.** The app makes no network connections and has no third-party SDKs, ads, or analytics. See the full [Privacy Policy](privacy).
+- **No server.** The app makes no network connections of its own and has no third-party SDKs, ads, or analytics. Your data is stored on the device; backups go to your own iCloud Drive. See the full [Privacy Policy](privacy).
 
 ---
 
@@ -282,7 +297,7 @@ Leaving a screen on all night uses power. Here's how to keep it minimal:
 - **Avoid blue.** Blue is the most power-hungry color and the most sleep-disrupting.
 - **Lower the brightness.** Anything from 15% up works; lower brightness saves power and is gentler at night.
 - **Use a smaller font.** Fewer lit pixels means less power. Pick a size that's still comfortably readable from bed.
-- **Tap "Reset to lowest power."** One tap in the display settings switches the clock to the most battery-friendly combination.
+- **Tap "Use Lowest-Power Motion."** In Clock Settings, one tap sets the slowest drift and longest wait. Color and brightness you set yourself, using the tips above.
 - **Keep it plugged in.** For all-night use, charging on the nightstand is ideal.
 
 ---
@@ -294,28 +309,32 @@ Leaving a screen on all night uses power. Here's how to keep it minimal:
 - The **bottom tab bar is customizable.** Choose up to **5** of: Home, Alarms, Reminders, Meds, Journal, Settings. Anything you don't pin lives in the **☰ menu**, so the app stays tidy and focused on what you use.
 - **On an iPad** in full screen there is no bar and no ☰: a sidebar on the left lists every section, and Meds and Reminders show their doses, lists and calendar side by side. Night Mode and the Home clock draw larger to fill the bigger screen.
 
-**History retention**
+**History Shown**
 
-- Choose a retention window: **14 days, 30 days, 90 days, or 1 year.** This controls the default view window — but note that **full history is always kept and never auto-deleted**. Your records are safe regardless of the setting.
+- **Show the last** — **14 days, 30 days, 90 days, or 1 year.** This sets how far back history and reports show. It **deletes nothing**: full history is always kept.
+
+**Upcoming Preview**
+
+- **Items shown (max)** (default 15) and **Look ahead (days)** (default 2) set how many lines the Upcoming list shows and how far ahead it looks.
 
 **Sounds**
 
-- The built-in tones for alarms, reminders, and medications, plus **custom audio import** for reminders (imported audio is trimmed to 30 seconds).
+- The built-in tones for alarms, reminders, and medications, plus **custom audio import** (imported audio is trimmed to 30 seconds).
 
 **Privacy toggles**
 
-- **Anonymize medication names on the lock screen** (see [Notifications &amp; Privacy](#notifications--privacy)).
+- **Hide medication names on the Lock Screen** (see [Notifications &amp; Privacy](#notifications--privacy)).
 
 **Backup, restore, export, import**
 
-- **Automatic iCloud Drive backups** — the app backs up to **your own iCloud Drive** every **6 hours when data has changed**.
+- **Automatic backups** — **on by default.** The app backs up to **your own iCloud Drive** at most every **6 hours, when something has changed**. You can turn it off in Settings › Data & Backup.
 - **Back Up Now** — trigger a manual backup any time.
 - **Restore** — restore from a backup. This **replaces all current data**, but the app **snapshots first** so you can undo if the restore wasn't what you wanted.
 - **Export / Import JSON** — export a **hand-editable JSON file** you fully control, and import it back. This is the easy way to move data to a new phone (see [Support](support)).
 
 **Erase**
 
-- **Erase All Data** — wipes your data after asking you to type a **confirmation word**. It **preserves your backups**, so this clears the app without touching what's saved in iCloud Drive or your exported files.
+- **Erase All Data** — removes everything on this device after asking you to type a **confirmation word**. It does **not** touch iCloud: your backups in iCloud Drive and your exported files are left as they are.
 
 **Sample data**
 
@@ -325,7 +344,7 @@ Leaving a screen on all night uses power. Here's how to keep it minimal:
 
 ## About
 
-CronClock: Alarms & Reminders is a **free app for iPhone and iPad** built for **peaceful, power-friendly nights**. It's fully offline: no network, no third-party SDKs, no account, and no tracking, ads, or analytics. All your data stays on your device, and any backups go to **your own** iCloud Drive or a JSON file you export and control.
+CronClock: Alarms & Reminders is a **free app for iPhone and iPad** built for **peaceful, power-friendly nights**. It has no server, no third-party SDKs, no account, and no tracking, ads, or analytics; the app makes no network connections of its own. Your data stays on your device, and backups go to **your own** iCloud Drive (automatic backups are on by default and can be turned off) or a JSON file you export and control.
 
 - **Privacy Policy:** [privacy](privacy)
 - **Support:** [support](support)
