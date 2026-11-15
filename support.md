@@ -1,6 +1,6 @@
 ---
 title: Support
-description: Get help with PlanClock: Alarms & Reminders — where to look, and a short FAQ.
+description: Get help with CronClock: Alarms & Reminders — where to look, and a short FAQ.
 ---
 
 # Support
@@ -19,7 +19,7 @@ There's no account and no support portal to sign into.
 
 ### My alarms (or reminders/medications) aren't firing
 
-Notifications are the only way the app can alert you, so **notifications must be allowed**. Open the iOS **Settings** app, go to **PlanClock**, tap **Notifications**, and make sure they're turned on. Also check that your ringer volume is up — alarm volume follows the device ringer. Medication reminders are time-sensitive and break through Focus and Do Not Disturb, but they still need notifications to be allowed.
+Notifications are the only way the app can alert you, so **notifications must be allowed**. Open the iOS **Settings** app, go to **CronClock**, tap **Notifications**, and make sure they're turned on. Also check that your ringer volume is up — alarm volume follows the device ringer. Medication reminders are time-sensitive and break through Focus and Do Not Disturb, but they still need notifications to be allowed.
 
 ### Where are my backups?
 
@@ -30,7 +30,7 @@ The app automatically backs up to **your own iCloud Drive** every 6 hours when y
 Use **export and import**:
 
 1. On your old phone, open **Settings** in the app and **export** your data to a JSON file (for example, save it to iCloud Drive or share it to yourself).
-2. On your new phone, install PlanClock, open **Settings**, and **import** that JSON file.
+2. On your new phone, install CronClock, open **Settings**, and **import** that JSON file.
 
 If both phones use the same iCloud account, you can also **restore** from your automatic iCloud Drive backup. Restoring **replaces all current data**, but the app snapshots first so you can undo.
 

@@ -1,13 +1,13 @@
 ---
-title: PlanClock: Alarms & Reminders
+title: CronClock: Alarms & Reminders
 description: A bedside display designed for nighttime use — power-efficient, sleep-friendly, and always readable.
 ---
 
-# PlanClock: Alarms & Reminders
+# CronClock: Alarms & Reminders
 
 **A bedside display designed for nighttime use — power-efficient, sleep-friendly, and always readable.**
 
-PlanClock: Alarms & Reminders turns your iPhone or iPad into a calm, glare-free bedside clock and puts your alarms, reminders, medications, and a quick night journal in one place. It runs fully on your device — no account, no network, no tracking — so you get **peaceful, power-friendly nights** without giving anything away.
+CronClock: Alarms & Reminders turns your iPhone or iPad into a calm, glare-free bedside clock and puts your alarms, reminders, medications, and a quick night journal in one place. It runs fully on your device — no account, no network, no tracking — so you get **peaceful, power-friendly nights** without giving anything away.
 
 It's a **free app for iPhone and iPad**.
 
