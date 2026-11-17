@@ -156,7 +156,7 @@ don't get to it. The editor shows what the chosen type does, under the picker:
 - **Don't notify** — never sends a notification. It still shows in Upcoming and on the
   calendar, and you can mark it done. Good for things you want on your list but not on
   your lock screen.
-- **Notify once** — notifies once and never nags. No deadline, so it's never overdue and
+- **Notify once** — notifies once and never nags; there is no Snooze. No deadline, so it's never overdue and
   never counts as missed: if you don't mark it done, it shows as **Not done**, and it
   leaves **Due now** once the next time comes due. Good for *"water the plants."*
 - **Keep until done** — has a deadline, and if you miss it the reminder **stays on your
@@ -168,6 +168,18 @@ don't get to it. The editor shows what the chosen type does, under the picker:
   pressure."*
 
 All four can repeat, happen once, or run on chosen dates.
+
+### Notifications
+
+Under **Notifications** in the editor, each row is one notification: **at the time**, or a
+number of **minutes, hours, days, weeks or months before**. Tap **Add notification** for
+another (up to five) — for example one a day before and one at the time — and swipe a row
+left to remove it. With none set, the reminder notifies at the time. A reminder set to
+**Ring until stopped** rings at the time and still sends the earlier ones as notifications.
+The section is hidden for **Don't notify**.
+
+"1 month before" is a calendar month, so a reminder on March 31 notifies on the last day
+of February.
 
 ### Categories
 
@@ -191,9 +203,9 @@ Choose from **12 presets** or a **custom** color.
 
 The Reminders screen has three segments: **Upcoming**, **Reminders**, and **Calendar**.
 
-- **Upcoming** — one line per reminder, under **Due now**, **Upcoming**, and **Recent history**, with a "more" line when it has other occurrences. Open one to **Mark done**, **Snooze**, or **Silence** it. Settings › Upcoming Preview sets **Items shown (max)** (default 15) and **Look ahead (days)** (default 2).
+- **Upcoming** — one line per reminder: under **Due now** its latest due occurrence (with a "more" line when earlier ones are still open), under **Upcoming** only its **next time**, and under **Recent history** its last one. Open one to **Mark done**, **Snooze** (not for Notify once), or **Silence** it.
 - **Calendar** — a month view. Dates more than 2 weeks ahead show as **Planned**.
-- **Status words** — Due now, Late, still OK, Overdue, Not done, Taken on time, Taken late, Not taken, Missed, Silenced.
+- **Status words** — Due now, Late, still OK, Overdue, Not done, Taken on time, Taken close to time, Taken late, Taken early, Not taken, Missed, Silenced.
 - **History log** — a timestamped record of every event: notified, done, snoozed, silenced, and missed.
 - **Adherence reports** — see how consistently you're keeping up, both **per reminder** and **per category**.
 - **Search** — find reminders by **name**, **notes**, or **category**.
@@ -210,9 +222,15 @@ Medications work like reminders but are tuned for taking doses on schedule.
 
 - **Frequency shortcuts** — once, twice, or three times a day, with sensible preset times (morning, noon, dinner), or set a **custom** schedule.
 - **Timing rules** — each medication has one, and the editor describes it under the picker:
-  - **Regular (30-min window)** — on time within 30 minutes of the set time, still OK (recorded as late) for up to 4 hours, then missed.
-  - **Strict timing (15-min window)** — on time within 15 minutes, still OK for up to 2 hours, then missed.
-  - **Only when needed** — no times and no reminders. Use **Log a dose** on the medication's screen each time you take it.
+  - **Regular** — notifies again every 15 minutes until you record the dose.
+  - **Strict timing** — notifies again every 10 minutes until you record the dose.
+  - **Only when needed** — no times and no reminders. Use **Log a dose** on the medication's screen each time you take it. These doses are not graded and are left out of adherence.
+- **How a dose is graded** — the same for every scheduled medication, by how far from its time you took it:
+  - **On time** — within 30 minutes either side.
+  - **Close** — within an hour either side.
+  - **Late** — later than that, up to the **halfway point to the next dose** (for a twice-daily medication, 6 hours).
+  - **Missed** — not taken by that halfway point. Past it, the dose is closer to the next one than to its own, so taking it then risks doubling up. If you still record it as taken, it counts as late.
+  - **Early** — taken more than an hour before its time.
 - **Require a reading** — a separate switch. When on, a reading (blood pressure, glucose…) must be attached before a dose can be marked taken.
 
 **Handling a dose**
@@ -225,7 +243,7 @@ Open a dose and choose one under **Record this dose**:
 - **Silence** — quiet the alert but leave the dose open, so you can come back and say
   whether you took it.
 
-Each medication gets **one line** in each list — its latest due dose, its next dose, and its last recorded dose — with a "more" line underneath when there are others. A dose that is not taken is recorded as **missed** at the end of its window or when the **next dose is due**, whichever comes first, and then stops alerting.
+Each medication gets **one line** in each list — its latest due dose (with a "more" line when earlier ones are still open), **only its next dose**, and its last recorded dose. A dose that is not taken is recorded as **missed** at the halfway point to the next dose, and then stops alerting.
 
 A medication's notifications stack together. Older ones are cleared when you open the app, when you act on one, and by a background refresh that iOS runs when it chooses.
 
@@ -268,7 +286,7 @@ A simple place for quick bedside notes.
 
 **Notifications are the only alert channel.** Alarms, reminders, and medication doses all fire through iOS notifications. You must **allow notifications** for the app or nothing will alert you. If you're not getting alerts, check the iOS **Settings** app under **CronClock** and make sure notifications are on.
 
-**Acting on a notification.** Tap a reminder or dose notification to open that occurrence in the app. Press and hold it for quick actions: **Done**, **Snooze** or **Silence** for a reminder, and **Taken**, **Not taken**, **Snooze** or **Silence** for a dose. A reminder that needs a note, or a dose that needs a reading, has no Done or Taken there — open it and add that first. Snooze starts the reminders again from the end of the snooze. An alarm rings full screen with its own Stop and Snooze.
+**Acting on a notification.** Tap a reminder or dose notification to open that occurrence in the app. Press and hold it for quick actions: **Done**, **Snooze** or **Silence** for a reminder (a Notify once reminder has no Snooze), and **Taken**, **Not taken**, **Snooze** or **Silence** for a dose. A reminder that needs a note, or a dose that needs a reading, has no Done or Taken there — open it and add that first. Snooze starts the reminders again from the end of the snooze. An alarm rings full screen with its own Stop and Snooze.
 
 Notifications for one medication or reminder stack together. Older ones are cleared when you open the app, when you act on one, and by a background refresh that iOS runs when it chooses.
 
@@ -316,10 +334,6 @@ Leaving a screen on all night uses power. Here's how to keep it minimal:
 **History Shown**
 
 - **Show the last** — **14 days, 30 days, 90 days, or 1 year.** This sets how far back history and reports show. It **deletes nothing**: full history is always kept.
-
-**Upcoming Preview**
-
-- **Items shown (max)** (default 15) and **Look ahead (days)** (default 2) set how many lines the Upcoming list shows and how far ahead it looks.
 
 **Sounds**
 

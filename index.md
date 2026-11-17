@@ -44,12 +44,12 @@ A quick, scannable look at what the app does.
 
 ### Reminders
 - Three ways to schedule: **Once**, **Repeats** (calendar rules), or **Chosen dates**.
-- Four types: **Don't notify** (on your list, no notification), **Notify once** (one notification), **Keep until done** (reminds again until you mark it done), and **Log by deadline** (needs a note attached before the deadline).
+- Four types: **Don't notify** (on your list, no notification), **Notify once** (one notification, no snooze), **Keep until done** (reminds again until you mark it done), and **Log by deadline** (needs a note attached before the deadline).
 - Group related reminders into **Categories** (like "Household"), with a month calendar, Upcoming lists of what is due now, what is next, and recent history, and adherence reports.
 - Color coding, 7 built-in tones plus custom audio, and "Ring until stopped" for items that must not be missed.
 
 ### Medications
-- Dose reminders with frequency shortcuts and **timing rules**: Regular (on time within 30 minutes, late but OK up to 4 hours), Strict timing (15 minutes, up to 2 hours), or Only when needed (no times, no reminders).
+- Dose reminders with frequency shortcuts and **timing rules** (Regular, Strict timing, or Only when needed). Each dose is graded **on time** (within 30 minutes), **close** (within an hour), **late**, or **missed** (not taken by halfway to the next dose).
 - For each dose: **Dose taken** (records the exact time), **Dose not taken**, **Snooze**, or **Silence**.
 - A floating dose **bubble** drifts over the app when a dose is due — tap it to jump straight there.
 - An adherence report (percent and counts) and a color tag per medication. Dose alerts are Time Sensitive, so they can break through Focus.
